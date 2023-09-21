@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Booking</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- nav start -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./Images/logo.jfif" alt="">
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="./Index.html">Home <i class="bi bi-house-door-fill"></i></a></li>
+                <li><a href="./Online booking.html">Online Booking <i class="bi bi-ticket-detailed-fill"></i></a></li>
+                <li><a href="./Gallery.html">Gallery <i class="bi bi-image-fill"></i></a></li>
+                <li><a href="./Animal info.html">Animals Info <i class="bi bi-info-circle-fill"></i></a></li>
+                <li><a href="./Feedback.html">Feedback <i class="bi bi-chat-left-text-fill"></i></a></li>
+            </ul>
+        </nav>
+    </header> 
+    <!-- nav end -->
+    
+    <section>
+        <h1> Online Booking</h1>
+        <div class="booking-text">
+            <p>Join us at our aquarium, where education, entertainment, and environmental stewardship converge. Together, let's dive into a world of discovery and embark on a journey that will leave you with lasting memories and a renewed appreciation for the extraordinary beauty of the underwater realm.</p>
+        </div>
+        <div class="booking-container">
+            <form action="./index.html" onsubmit="return validate()">
+                <div class="row">
+                    <div class="label-container">
+                        <label for="name">Full Name</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="name" name="name" placeholder="Enter Your Name.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-container">
+                        <label for="email">E-mail Address</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" placeholder="Enter Your E-mail Address" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-container">
+                        <label for="num">Contact Number</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="number" id="num" name="contact" placeholder=" Enter Your Contact Number" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-container">
+                        <label for="ticket">Number Of Ticket</label>
+                    </div>
+                    <div class="input-container">
+                        <select id="Ticket" name="Ticket" required>
+                            <option value="">Select</option>
+                            <option value="1">1 Ticket</option>
+                            <option value="2">2 Tickets</option>
+                            <option value="3">3 Tickets</option>
+                            <option value="4">4 Tickets</option>
+                            <option value="5">5 Tickets</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-container">
+                        <label for="date">Select Date</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="date" id="date" required>
+                    </div>
+                </div>
+                <div>
+                    <h3>Payment Method</h3>
+                    <p>Please select your payment method:</p>
+                    <input type="radio" id="m1" name="method" required>
+                    <label for="m1"><i class="bi bi-credit-card-fill"></i> Credit/Debit Card</label><br>
+                    <input type="radio" id="m2" name="method" required>
+                    <label for="m2"><i class="bi bi-paypal"></i> PayPal</label><br>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>  
+            </form>
+        </div>
+    <!-- footer start -->
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Home</h4>
+                        <ul>
+                            <li><a href="#main">Main Section</a></li>
+                            <li><a href="#slider">Slider</a></li>
+                            <li><a href="#gallery">Gallery </a></li>
+                            <li><a href="#info">Animal Info</a></li>
+                            <li><a href="#location">Map</a></li>
+                            <li><a href="#geographical">Geographical</a></li>
+                            <li><a href="#event">Special Events</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="./Index.html">Home</a></li>
+                            <li><a href="./Online booking.html">Online Booking</a></li>
+                            <li><a href="./Gallery.html">Gallery</a></li>
+                            <li><a href="./Animal info.html">Animal info</a></li>
+                            <li><a href="./Feedback.html">Feedback</a></li>
+                        </ul>      
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Booking Status</a></li>
+                            <li><a href="#">Payment Option</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>  
+                        <div class="icon-link">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+                            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-container">
+                <a href="mailto:aquarium0333@gmail.com?subject-New E-mail"><i class="bi bi-envelope-at-fill"></i> nexus.aquarium0333@gmail.com</a>
+                <p><i class="bi bi-whatsapp"></i> +1 206 5678980</p>
+                <p><i class="bi bi-geo-alt-fill"></i> 1483 Alaskan Way Pier 59, Seattle, Washington 98101, United States.</p> 
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="./script.js"></script>
+</body>
+</html>
