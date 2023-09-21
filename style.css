@@ -1294,7 +1294,7 @@ ul li a:hover{
 
 /* Mobile responsive */
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
     div.logo img{
         border-radius: 15px;
         height: 50px;
